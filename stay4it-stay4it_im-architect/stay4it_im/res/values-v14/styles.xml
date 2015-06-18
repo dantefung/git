@@ -1,0 +1,48 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!-- API 14 theme customizations can go here. -->
+        
+    </style>
+    <style name="Theme" parent="AppBaseTheme">
+        <!-- API 14 theme customizations can go here. -->
+        <item name="android:actionBarStyle">@style/actionbarStyle</item>
+    </style>
+    
+    <style name="Theme.Light" parent="Theme">
+		<item name="SkinBackground">@style/skinLightStyle</item>        
+    </style>
+    
+    <style name="Theme.Dark" parent="Theme">
+		<item name="SkinBackground">@style/skinDarkStyle</item>        
+    </style>
+    
+    
+    <style name="skinLightStyle">
+        <item name="android:background">#0000ff</item>
+    </style>
+    
+    <style name="skinDarkStyle">
+        <item name="android:background">#00ff00</item>
+    </style>
+    
+    <style name="actionbarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:titleTextStyle">@style/actionbarTextStyle</item>
+		<item name="android:background">@drawable/bg_actionbar</item>
+        <item name="android:backgroundStacked">@null</item>
+        <item name="android:backgroundSplit">@null</item>
+        <item name="android:divider">@null</item>
+        <item name="android:icon">@drawable/whatsnew_logo1</item>
+    </style>
+    
+    
+    <style name="actionbarTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>
